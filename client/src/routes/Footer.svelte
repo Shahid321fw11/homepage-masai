@@ -2,7 +2,7 @@
 </script>
 
 <div>
-	<div class="justify-between align-center bg-primary-red-900 bg-black">
+	<div class="justify-between align-center bg-primary-red-900 bg-[#0A0103]">
 		<div
 			class="mx-auto py-5 px-4 sm:px-6 lg:px-8 flex md:flex-row flex-col items-center justify-center border-b border-opacity-20 border-[rgba(209,213,219,0.2)]"
 		>
