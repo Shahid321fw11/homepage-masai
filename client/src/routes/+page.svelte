@@ -31,9 +31,9 @@
 	<Certificate />
 </section>
 
-<!-- <section>
+<section>
 	<News />
-</section> -->
+</section>
 
 <section>
 	<Footer />
