@@ -24,7 +24,7 @@
 
 		<div class="max-w-[80rem] mx-auto">
 			<div
-				class="w-full justify-between py-5 px-2 sm:hidden lg:flex"
+				class="w-full justify-between py-5 px-2 hidden lg:flex"
 				style="box-shadow: rgba(243, 242, 242, 0.2) 0px 1px 0px 0px;"
 			>
 				<a href="/"
@@ -308,10 +308,10 @@
 				</a>
 			</div>
 			<div
-				class="py-5 lg:px-3 px-4 md:px-0 flex justify-between items-center"
+				class="py-5 lg:px-3 px-4 md:px-0 flex justify-between items-center gap-3"
 				style="box-shadow: rgba(243, 242, 242, 0.2) 0px -1px 0px 0px;"
 			>
-				<p class="sm:hidden lg:block text-neutral-500 leading-[22px] font-normal text-base">
+				<p class="hidden lg:block text-neutral-500 leading-[22px] font-normal text-base">
 					© 2023 by Masai School | A Nolan Edutech Pvt Ltd Venture
 				</p>
 				<p class="lg:hidden text-neutral-500 leading-4 font-normal text-[10px]">
@@ -321,17 +321,17 @@
 					<a
 						href="/privacy"
 						rel="noreferrer"
-						class="underline cursor-pointer text-neutral-500 sm:leading-4 lg:leading-[18px] sm:text-[10px] lg:text-xs inline font-normal"
+						class="underline cursor-pointer text-neutral-500 leading-4 lg:leading-[18px] text-[10px] lg:text-xs inline font-normal"
 						>Privacy Policy</a
 					>
 					<span
-						class="text-neutral-500 sm:leading-4 lg:leading-[18px] sm:text-[10px] lg:text-xs font-normal inline mx-0"
+						class="text-neutral-500 leading-4 lg:leading-[18px] text-[10px] lg:text-xs font-normal inline mx-0"
 						>&amp;</span
 					>
 					<a
 						href="/terms"
 						rel="noreferrer"
-						class="underline cursor-pointer text-neutral-500 sm:leading-4 lg:leading-[18px] sm:text-[10px] lg:text-xs inline font-normal"
+						class="underline cursor-pointer text-neutral-500 leading-4 lg:leading-[18px] text-[10px] lg:text-xs inline font-normal"
 						>Terms and Conditions</a
 					>
 				</div>
