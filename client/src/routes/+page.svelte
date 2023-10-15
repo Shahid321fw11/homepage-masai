@@ -7,6 +7,10 @@
 	import Hero from '../components/Hero.svelte';
 	import Courses from '../components/Courses.svelte';
 	import Potential from '../components/Potential.svelte';
+	import Elevate from '../components/Elevate.svelte';
+	import Hiring from '../components/Hiring.svelte';
+	// import NewNavbar from '../components/NewNavbar.svelte';
+	// import Curriculum from '../components/Curriculum.svelte';
 </script>
 
 <slot />
@@ -14,6 +18,10 @@
 <section>
 	<Navbar />
 </section>
+
+<!-- <section>
+	<NewNavbar />
+</section> -->
 
 <section>
 	<Hero />
@@ -25,6 +33,18 @@
 
 <section>
 	<Courses />
+</section>
+
+<!-- <section>
+	<Curriculum />
+</section> -->
+
+<section>
+	<Hiring />
+</section>
+
+<section>
+	<Elevate />
 </section>
 
 <section>
