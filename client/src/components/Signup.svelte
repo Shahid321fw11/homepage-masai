@@ -5,7 +5,8 @@
 		name: '',
 		email: '',
 		mobile: '',
-		code: ''
+		code: '',
+		password: ''
 	};
 	function handleSubmit() {
 		console.log('Submitting data:', data);
@@ -32,7 +33,7 @@
 			>
 		</p>
 	</div>
-    
+
 	<div class="flex flex-col gap-4">
 		<div>
 			<p>Full Name <span class="text-[#ff3561]">*</span></p>
@@ -68,6 +69,15 @@
 				type="text"
 				placeholder="Enter referral code"
 				bind:value={data.code}
+			/>
+		</div>
+		<div>
+			<p>Password <span class="text-[#ff3561]">*</span></p>
+			<input
+				class="border border-1 border-[#f0f4f7] rounded-lg h-12 w-full px-2"
+				type="password"
+				placeholder="Enter your password"
+				bind:value={data.password}
 			/>
 		</div>
 		<button
