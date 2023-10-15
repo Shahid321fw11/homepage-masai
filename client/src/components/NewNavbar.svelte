@@ -1,19 +1,30 @@
-<script>
-</script>
-
+<div
+	class="toast fixed z-[10000] pointer-events-none top-[24px] left-[0px] right-[0px] mx-auto flex w-full max-w-[504px] flex-col-reverse gap-4 sm:translate-x-0 undefined undefined"
+/>
+<div class="drawerDiv" />
 <div class="sticky top-[-1px] left-0 z-[200]">
 	<div class="bg-[#FEDFE5] text-center py-[8px] relative px-[8px]">
-		<p class="!font-[600] text-[16px] leading-[24px] font-sans">
+		<p
+			class="!font-[600] text-[16px] leading-[24px] font-sans transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 hidden md:block"
+		>
+			Applications for our 6th November Batches are now open!
+			<button
+				type="button"
+				class="active:!ring-0 bg-red-500 hover:bg-red-600 rounded-[8px] text-white !font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[8px_12px] inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 ml-[10px]"
+				>Apply now</button
+			>
+		</p>
+		<p
+			class="!font-[600] text-[14px] leading-[24px] font-sans transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 md:hidden"
+		>
 			Applications for our 6th November Batches are now open!
 			<button
 				type="button"
 				class="active:!ring-0 bg-red-500 hover:bg-red-600 rounded-[8px] text-white !font-[600] text-[12px] leading-[16px] font-sans tracking-[1.25px] uppercase p-[8px_12px] inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 ml-[10px] mt-[6px]"
+				>Apply now</button
 			>
-				Apply now
-			</button>
 		</p>
 	</div>
-
 	<nav
 		class="bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 border-gray-100 dark:border-gray-700 w-full bg-[#FFFFFF] relative z-[100] shadow-[0px_4px_6px_rgba(0,_0,_0,_0.11)] md:shadow-[0px_1px_2px_rgba(0,_0,_0,_0.06)]"
 	>
@@ -50,7 +61,7 @@
 				>
 					<li>
 						<a
-							href="/"
+							href="/courses"
 							class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
 							><p
 								class="!font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 hover:!text-[#ED0331] rounded-[8px] font-[600] text-[14px] font-sans text-center hover:bg-[#FFFAFB] p-[8px] xl:p-[8px_16px] lg:text-[12px] xl:text-[14px] !text-[#03081A]"
@@ -61,7 +72,7 @@
 					</li>
 					<li>
 						<a
-							href="/"
+							href="/fees"
 							class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
 							><p
 								class="!font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 hover:!text-[#ED0331] rounded-[8px] font-[600] text-[14px] font-sans text-center hover:bg-[#FFFAFB] p-[8px] xl:p-[8px_16px] lg:text-[12px] xl:text-[14px] !text-[#03081A]"
@@ -72,7 +83,7 @@
 					</li>
 					<li>
 						<a
-							href="/"
+							href="/events"
 							class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
 							><p
 								class="!font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 hover:!text-[#ED0331] rounded-[8px] font-[600] text-[14px] font-sans text-center hover:bg-[#FFFAFB] p-[8px] xl:p-[8px_16px] lg:text-[12px] xl:text-[14px] !text-[#03081A]"
@@ -83,7 +94,7 @@
 					</li>
 					<li>
 						<a
-							href="/"
+							href="/learn"
 							class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
 							><p
 								class="!font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 hover:!text-[#ED0331] rounded-[8px] font-[600] text-[14px] font-sans text-center hover:bg-[#FFFAFB] p-[8px] xl:p-[8px_16px] lg:text-[12px] xl:text-[14px] !text-[#03081A]"
@@ -94,7 +105,7 @@
 					</li>
 					<li>
 						<a
-							href="/"
+							href="/success-stories"
 							class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
 							><p
 								class="!font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 hover:!text-[#ED0331] rounded-[8px] font-[600] text-[14px] font-sans text-center hover:bg-[#FFFAFB] p-[8px] xl:p-[8px_16px] lg:text-[12px] xl:text-[14px] !text-[#03081A]"
@@ -105,7 +116,7 @@
 					</li>
 					<li>
 						<a
-							href="/"
+							href="/hire-masai-graduates"
 							class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
 							><p
 								class="!font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 hover:!text-[#ED0331] rounded-[8px] font-[600] text-[14px] font-sans text-center hover:bg-[#FFFAFB] p-[8px] xl:p-[8px_16px] lg:text-[12px] xl:text-[14px] !text-[#03081A]"
@@ -117,18 +128,13 @@
 				</ul>
 			</div>
 			<div class="flex items-center gap-[8px] xl:gap-[16px]">
-				<div class="overflow-hidden relative flex items-center">
-					<div class="absolute">
-						<div class="w-full h-full pointer-events-none" />
-					</div>
-				</div>
 				<a
 					href="/"
 					class="active:!ring-0 bg-red-500 hover:bg-red-600 rounded-[8px] text-white !font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[12px_16px] inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 w-fit md:px-[8px] hidden md:flex !bg-[#E5FEFF] hover:!bg-[#CFE9EE] whitespace-nowrap"
 					style="color: rgb(110, 113, 204) !important;">Refer &amp; Earn</a
 				>
 				<a
-					href="/"
+					href="/referral"
 					class="active:!ring-0 bg-red-500 hover:bg-red-600 rounded-[8px] text-white !font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[8px_12px] inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 px-[8px] flex md:hidden !bg-[#E5FEFF] hover:!bg-[#CFE9EE] text-[12px] !font-[600] flex whitespace-nowrap"
 					style="color: rgb(110, 113, 204) !important;">Refer &amp; Earn</a
 				>
@@ -146,9 +152,8 @@
 		</div>
 	</nav>
 </div>
-
-<!-- <div
-	class="sticky top-[var(--top)] md:top-[var(--top)] left-0 z-[160]"
+<div
+	class="sticky top-[var(136px)] md:top-[var(136px)] left-0 z-[160]"
 	style="box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px, rgba(0, 0, 0, 0.06) 0px 1px 2px; --top: 136px;"
 >
 	<div
@@ -157,37 +162,37 @@
 	>
 		<div class="grid left-0 right-0 overflow-hidden undefined svelte-159q009">
 			<ul class="mt-0 pt-[8px]">
-				<a href="/" class="hover:!bg-white"
+				<a href="/courses" class="hover:!bg-white"
 					><p
 						class="!font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 !text-[#03081A] hover:!text-[#ED0331] hover:bg-[#FFFAFB] text-[16px] px-4 py-2"
 					>
 						Courses
 					</p>
-				</a><a href="/" class="hover:!bg-white"
+				</a><a href="/fees" class="hover:!bg-white"
 					><p
 						class="!font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 !text-[#03081A] hover:!text-[#ED0331] hover:bg-[#FFFAFB] text-[16px] px-4 py-2"
 					>
 						Fees
 					</p>
-				</a><a href="/" class="hover:!bg-white"
+				</a><a href="/events" class="hover:!bg-white"
 					><p
 						class="!font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 !text-[#03081A] hover:!text-[#ED0331] hover:bg-[#FFFAFB] text-[16px] px-4 py-2"
 					>
 						Events
 					</p>
-				</a><a href="/" class="hover:!bg-white"
+				</a><a href="/learn" class="hover:!bg-white"
 					><p
 						class="!font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 !text-[#03081A] hover:!text-[#ED0331] hover:bg-[#FFFAFB] text-[16px] px-4 py-2"
 					>
 						Learn
 					</p>
-				</a><a href="/" class="hover:!bg-white"
+				</a><a href="/success-stories" class="hover:!bg-white"
 					><p
 						class="!font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 !text-[#03081A] hover:!text-[#ED0331] hover:bg-[#FFFAFB] text-[16px] px-4 py-2"
 					>
 						Success Stories
 					</p>
-				</a><a href="/" class="hover:!bg-white"
+				</a><a href="/hire-masai-graduates" class="hover:!bg-white"
 					><p
 						class="!font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 !text-[#03081A] hover:!text-[#ED0331] hover:bg-[#FFFAFB] text-[16px] px-4 py-2"
 					>
@@ -197,7 +202,19 @@
 			</ul>
 		</div>
 	</div>
-</div> -->
+</div>
 
 <style>
+	.closed.svelte-159q009.svelte-159q009 {
+		grid-template-rows: 0vh, 0fr;
+		transition: grid-template-rows 0.5s;
+	}
+
+	.closed.svelte-159q009 > div.svelte-159q009 {
+		overflow: hidden;
+	}
+
+	.open .svelte-159q009 .svelte-159q009 {
+		grid-template-rows: 100vh, 1fr;
+	}
 </style>
