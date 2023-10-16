@@ -15,8 +15,8 @@ def test_home_endpoint(client):
 
 
 def test_signup_positive(client):
-    result=client.post('/signup',json={
-        'full_name':'tester1',
+    result=client.post('/signUp',json={
+        'full_name':'tester11',
         'email':'tester1@gmail.com',
         'phone_number':'1234567890',
         'referral_code':'10111',
@@ -32,7 +32,7 @@ def test_signup_positive(client):
     
 
 def test_signup_missing_name(client):
-    result=client.post('/signup',json={
+    result=client.post('/signUp',json={
         'full_name':'',
         'email':'tester2@gmail.com',
         'phone_number':'1234567891',
@@ -43,7 +43,7 @@ def test_signup_missing_name(client):
     assert result.status_code==400
 
 def test_signup_missing_email(client):
-    result=client.post('/signup',json={
+    result=client.post('/signUp',json={
         'full_name':'tester3',
         'email':'',
         'phone_number':'1234567892',
@@ -54,7 +54,7 @@ def test_signup_missing_email(client):
     assert result.status_code==400
 
 def test_signup_invalid_email_1(client):
-    result=client.post('/signup',json={
+    result=client.post('/signUp',json={
         'full_name':'tester4',
         'email':'tester4gmail.com',
         'phone_number':'1234567893',
@@ -66,7 +66,7 @@ def test_signup_invalid_email_1(client):
 
 
 def test_signup_invalid_email_2(client):
-    result=client.post('/signup',json={
+    result=client.post('/signUp',json={
         'full_name':'tester5',
         'email':'tester5@gmail',
         'phone_number':'1234567894',
@@ -77,7 +77,7 @@ def test_signup_invalid_email_2(client):
     assert result.status_code==400
 
 def test_signup_invalid_phone(client):
-    result=client.post('/signup',json={
+    result=client.post('/signUp',json={
         'full_name':'tester6',
         'email':'tester6@gmail.com',
         'phone_number':'12345678',  #invalid number
@@ -89,7 +89,7 @@ def test_signup_invalid_phone(client):
 
 
 def test_signup_invalid_password(client):
-    result=client.post('/signup',json={
+    result=client.post('/signUp',json={
         'full_name':'tester7',
         'email':'tester7@gmail.com',
         'phone_number':'1234567895',
@@ -100,8 +100,8 @@ def test_signup_invalid_password(client):
     assert result.status_code==400
 
 def test_signup_without_reffral(client):
-    result=client.post('/signup',json={
-        'full_name':'tester8',
+    result=client.post('/signUp',json={
+        'full_name':'tester12',
         'email':'tester8@gmail.com',
         'phone_number':'1234567897',
         'referral_code':'',

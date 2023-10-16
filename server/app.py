@@ -7,9 +7,10 @@ import secrets
 
 app = Flask(__name__)
 app.secret_key = 'masai'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:root@localhost/flaskapp'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user1.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-migrate = Migrate
+# migrate = Migrate
 
 
 class Users(db.Model):
@@ -33,7 +34,12 @@ class Users(db.Model):
 def init_db():
     with app.app_context():
         db.create_all()
-        migrate.init_app(app, db)
+        # migrate.init_app(app, db)
+
+
+@app.route('/', methods=['GET'])
+def home():
+    return "hello"
 
 
 @app.route('/signUp', methods=['POST'])
