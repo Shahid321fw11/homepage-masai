@@ -2,15 +2,13 @@ import flask_bcrypt
 from flask import Flask, request, jsonify, session
 from flask_sqlalchemy import SQLAlchemy
 import re
-from flask_migrate import Migrate
 import secrets
 
 app = Flask(__name__)
 app.secret_key = 'masai'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user1.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-# migrate = Migrate
 
 
 class Users(db.Model):
@@ -34,7 +32,7 @@ class Users(db.Model):
 def init_db():
     with app.app_context():
         db.create_all()
-        # migrate.init_app(app, db)
+        
 
 
 @app.route('/', methods=['GET'])
@@ -72,7 +70,12 @@ def signUp():
         db.session.add(new_user)
         db.session.commit()
 
-        return jsonify({"message": "Registration successful"}), 201
+        return jsonify({
+            "message": "Registration successful",
+            # "email":new_user.email,
+            # "phone":new_user.phone_number,
+            # "id":new_user.id
+            }), 201
 
 
 @app.route('/signIn', methods=['POST'])
