@@ -137,11 +137,8 @@
 				</div>
 				<a
 					href="/"
-
 					disabled="false"
 					class="active:!ring-0 rounded-[8px] text-white !font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[12px_16px] focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 w-fit md:px-[8px] hidden md:flex !bg-[#E5FEFF] hover:!bg-[#CFE9EE] whitespace-nowrap"
-
-					class="active:!ring-0 bg-red-500 hover:bg-red-600 rounded-[8px] text-white !font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[12px_16px] inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 w-fit md:px-[8px] hidden md:flex !bg-[#E5FEFF] hover:!bg-[#CFE9EE] whitespace-nowrap"
 
 					style="color: rgb(110, 113, 204) !important;">Refer &amp; Earn</a
 				>

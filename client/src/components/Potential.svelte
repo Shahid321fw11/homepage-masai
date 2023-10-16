@@ -88,7 +88,7 @@
 					</p>
 					<button
 						type="button"
-						class="active:!ring-0 bg-ms-red-500 hover:bg-ms-red-600 rounded-[8px] text-white !font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[12px_16px] inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 rounded-[8px] min-h-[48px] uppercase leading-[24px] text-[18px] font-[600] hover:bg-ms-red-600 bg-[#ED0331] text-[#fff] !mt-[24px] !lg:mt-[32px] !py-[12px] !px-[20px]"
+						class="active:!ring-0 bg-ms-red-500 hover:bg-ms-red-600  font-sans tracking-[1.25px]  p-[12px_16px] inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 rounded-[8px] min-h-[48px] uppercase leading-[24px] text-[18px] font-[600] hover:bg-ms-red-600 bg-[#ED0331] text-[#fff] !mt-[24px] !lg:mt-[32px] !py-[12px] !px-[20px]"
 						>Get your dream job
 					</button>
 				</div>
