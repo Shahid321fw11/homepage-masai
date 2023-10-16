@@ -13,7 +13,7 @@
 	class="fixed flex flex-col p-6 top-0 right-0 h-screen w-full md:w-1/3 bg-[#ffffff] transform scale-70 shadow-lg z-[201]"
 >
 	<div class="flex justify-end">
-		<button class="text-[#ec0532] hover:bg-slate-50 p-4" on:click={() => (isOpen = false)}
+		<button class="text-[#ec0532] hover:bg-slate-50 p-4 hover:rounded-lg" on:click={() => (isOpen = false)}
 			><svg
 				class="w-3 h-3 text-gray-800 dark:text-white"
 				aria-hidden="true"

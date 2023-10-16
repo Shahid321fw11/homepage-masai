@@ -4,7 +4,7 @@
 	import { setContext } from 'svelte';
 	let isOpen = false;
 	setContext('signinRoute', false);
-	
+
 	const toggleSidebar = () => {
 		isOpen = !isOpen;
 	};
