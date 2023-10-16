@@ -10,8 +10,12 @@
 			>
 				<div>
 					<div class="bg-[#F6EDE7] w-[91px] h-[91px] relative mx-[auto] mb-[32px] rounded-[50%]">
-						<span class="" />
-						<div class="h-[91px]" />
+						<img
+							src="https://masaischool.com/images/new-homepage/curriculum-style/graduate.svg"
+							alt="icon"
+							class="w-[73.33px] absolute right-[-7px]"
+							style=""
+						/>
 					</div>
 					<h3
 						class="font-[700] text-[24px] leading-[32px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 text-white"
@@ -24,8 +28,12 @@
 				style="box-shadow:0px 1px 7px rgba(208, 208, 208, 0.1), 0px 1px 2px rgba(122, 122, 122, 0.06);"
 				class="rounded-[24px] text-center p-[21px_16px] bg-[white] border-[1.00012px] border-solid border-[#CFD0EE]"
 			>
-				<span class="" />
-				<div class="h-[40px]" />
+				<img
+					src="https://masaischool.com/images/new-homepage/curriculum-style/laptop.svg"
+					alt="name"
+					class="mx-auto"
+					style=""
+				/>
 				<div
 					class="font-[700] text-[20px] leading-[28px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 mt-[24px]"
 				>
@@ -40,8 +48,12 @@
 				style="box-shadow:0px 1px 7px rgba(208, 208, 208, 0.1), 0px 1px 2px rgba(122, 122, 122, 0.06);"
 				class="rounded-[24px] text-center p-[21px_16px] bg-[white] border-[1.00012px] border-solid border-[#CFD0EE]"
 			>
-				<span class="" />
-				<div class="h-[40px]" />
+				<img
+					src="https://masaischool.com/images/new-homepage/curriculum-style/star.svg"
+					alt="name"
+					class="mx-auto"
+					style=""
+				/>
 				<div
 					class="font-[700] text-[20px] leading-[28px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 mt-[24px]"
 				>
@@ -56,8 +68,12 @@
 				style="box-shadow:0px 1px 7px rgba(208, 208, 208, 0.1), 0px 1px 2px rgba(122, 122, 122, 0.06);"
 				class="rounded-[24px] text-center p-[21px_16px] bg-[white] border-[1.00012px] border-solid border-[#CFD0EE]"
 			>
-				<span class="" />
-				<div class="h-[40px]" />
+				<img
+					src="https://masaischool.com/images/new-homepage/curriculum-style/certificate.svg"
+					alt="name"
+					class="mx-auto"
+					style=""
+				/>
 				<div
 					class="font-[700] text-[20px] leading-[28px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 mt-[24px]"
 				>
@@ -72,8 +88,12 @@
 				style="box-shadow:0px 1px 7px rgba(208, 208, 208, 0.1), 0px 1px 2px rgba(122, 122, 122, 0.06);"
 				class="rounded-[24px] text-center p-[21px_16px] bg-[white] border-[1.00012px] border-solid border-[#CFD0EE]"
 			>
-				<span class="" />
-				<div class="h-[40px]" />
+				<img
+					src="https://masaischool.com/images/new-homepage/curriculum-style/check.svg"
+					alt="name"
+					class="mx-auto"
+					style=""
+				/>
 				<div
 					class="font-[700] text-[20px] leading-[28px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 mt-[24px]"
 				>
@@ -108,13 +128,13 @@
 		<div class="w-full mt-[16px] items-center flex flex-wrap justify-center gap-[16px]">
 			<button
 				type="button"
-				class="active:!ring-0 bg-red-500 hover:bg-red-600 rounded-[8px] text-white !font-[600] text-[18px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[12px_20px] inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200"
+				class="active:!ring-0 bg-ms-red-500 hover:bg-ms-red-600 rounded-[8px] text-white !font-[600] text-[18px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[12px_20px] inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 bg-[#ED0331]"
 				>Get your dream job</button
 			>
 		</div>
 	</div>
 	<div id="curriculum" class="hidden md:block">
-		<div class="text-center sticky top-[var(146px)] z-[1]" style="--top: 146px;">
+		<div class="text-center sticky top-[var(--top)] z-[1]" style="--top: 146px;">
 			<div class="relative">
 				<p
 					class="font-[700] text-[34px] leading-[40px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 capitalize z-[1] bg-white pb-[16px] mb-[16px] text-center"
@@ -224,7 +244,7 @@
 			>
 				<button
 					type="button"
-					class="active:!ring-0 bg-red-500 hover:bg-red-600 rounded-[8px] text-white !font-[600] text-[18px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[12px_20px] inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 !sticky pointer-events-auto top-[90dvh] !z-[1] mb-[16px] h-fit"
+					class="active:!ring-0 bg-ms-red-500 hover:bg-ms-red-600 rounded-[8px] text-white !font-[600] text-[18px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[12px_20px] inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 !sticky pointer-events-auto top-[90dvh] !z-[1] mb-[16px] h-fit"
 					>Get your dream job</button
 				>
 			</div>
