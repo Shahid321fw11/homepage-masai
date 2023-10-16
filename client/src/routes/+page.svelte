@@ -1,5 +1,6 @@
 <script>
 	import '../app.css';
+	import '../non-critical-style.9657d852.css';
 	import Navbar from '../components/Navbar.svelte';
 	import Footer from '../components/Footer.svelte';
 	import News from '../components/News.svelte';
@@ -9,8 +10,10 @@
 	import Potential from '../components/Potential.svelte';
 	import Elevate from '../components/Elevate.svelte';
 	import Hiring from '../components/Hiring.svelte';
+	import Community from '../components/Community.svelte';
 	// import NewNavbar from '../components/NewNavbar.svelte';
-	// import Curriculum from '../components/Curriculum.svelte';
+	import Curriculum from '../components/Curriculum.svelte';
+	import Outcomes from '../components/Outcomes.svelte';
 </script>
 
 <slot />
@@ -31,12 +34,19 @@
 </section>
 
 <section>
+	<Outcomes />
+</section>
+
+<section>
 	<Courses />
 </section>
 
 <!-- <section>
-	<Curriculum />
+	<Community />
 </section> -->
+<section>
+	<Curriculum />
+</section>
 
 <section>
 	<Hiring />
