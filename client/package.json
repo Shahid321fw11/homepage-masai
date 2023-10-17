@@ -14,6 +14,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
+		"@zerodevx/svelte-toast": "^0.9.5",
 		"autoprefixer": "^10.4.16",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
@@ -30,7 +31,12 @@
 	},
 	"type": "module",
 	"dependencies": {
+<<<<<<< Updated upstream
 		"@sveltejs/vite-plugin-svelte": "^2.4.6",
 		"swiper": "^10.3.1"
+=======
+		"@k4ung/svelte-otp": "^0.0.9",
+		"@sveltejs/vite-plugin-svelte": "^2.4.6"
+>>>>>>> Stashed changes
 	}
 }

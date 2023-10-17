@@ -1,4 +1,5 @@
 <script>
+	import { SvelteToast } from '@zerodevx/svelte-toast';
 	import '../app.css';
 	import '../non-critical-style.9657d852.css';
 	import '../_layout.896888ea.css';
@@ -18,6 +19,7 @@
 	// import ImpactNew from '../components/ImpactNew.svelte';
 </script>
 
+<SvelteToast />
 <slot />
 <section class="fixed w-full z-[500]">
 	<Navbar />
@@ -73,3 +75,12 @@
 <section>
 	<Footer />
 </section>
+
+<style>
+	:root {
+		--toastContainerTop: 2rem;
+		--toastContainerRight: auto;
+		--toastContainerBottom: auto;
+		--toastContainerLeft: calc(50vw - 8rem);
+	}
+</style>

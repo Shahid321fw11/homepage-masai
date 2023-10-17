@@ -10,31 +10,30 @@
 </script>
 
 <div
-	class="fixed flex flex-col p-6 top-0 right-0 h-screen w-full md:w-1/3 bg-[#ffffff] transform scale-70 shadow-lg z-[201]"
+	class="fixed flex flex-col p-6 top-0 right-0 h-screen w-full md:w-1/3 bg-[#ffffff] shadow-lg z-[201]"
 >
 	<div class="flex justify-end">
-		<button class="text-[#ec0532] hover:bg-slate-50 p-4 hover:rounded-lg" on:click={() => (isOpen = false)}
+		<button
+			class="w-[16px] h-[16px] inline-block leading-[1em] flex-shrink-0 align-middle"
+			on:click={() => (isOpen = false)}
 			><svg
-				class="w-3 h-3 text-gray-800 dark:text-white"
+				viewBox="0 0 24 30"
+				focusable="false"
+				class="w-[16px] h-[16px] inline-block leading-[1em] flex-shrink-0 align-middle"
 				aria-hidden="true"
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 14 14"
-			>
-				<path
-					stroke="currentColor"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-				/>
-			</svg></button
+				><path
+					fill="currentColor"
+					d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"
+				/></svg
+			></button
 		>
 	</div>
-	<!-- Add more sidebar content as needed -->
-	{#if signinRoute}
-		<SignIn {togglesignIn} />
-	{:else}
-		<Signup {togglesignIn} />
-	{/if}
+	<div class="grid items-center h-full">
+		<!-- Add more sidebar content as needed -->
+		{#if signinRoute}
+			<SignIn bind:togglesignIn={togglesignIn} />
+		{:else}
+			<Signup bind:togglesignIn={togglesignIn} />
+		{/if}
+	</div>
 </div>
