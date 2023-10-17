@@ -1,3 +1,37 @@
+<script>
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		const textElements = document.querySelectorAll('.classLeft');
+		const imageElements = document.querySelectorAll('.classRight');
+		const windowHeight = window.innerHeight;
+
+		const updateImageOpacity = (index, opacity) => {
+			if (index >= 0 && index < imageElements.length) {
+				imageElements[index].style.opacity = opacity;
+			}
+		};
+
+		window.addEventListener('scroll', () => {
+			const scrollPosition = window.scrollY;
+			const middleSectionStart = windowHeight * 0.3;
+			const middleSectionEnd = windowHeight * 0.7;
+
+			// Loop through text elements
+			textElements.forEach((textElement, index) => {
+				const textRect = textElement.getBoundingClientRect();
+				if (textRect.top < middleSectionEnd && textRect.bottom > middleSectionStart) {
+					textElement.style.opacity = 1;
+					updateImageOpacity(index, 1);
+				} else {
+					textElement.style.opacity = 0.3;
+					updateImageOpacity(index, 0);
+				}
+			});
+		});
+	});
+</script>
+
 <div>
 	<div class="md:hidden">
 		<div
@@ -165,8 +199,7 @@
 			<div class="flex flex-col my-[48px]">
 				<div
 					id="courseText0"
-					class="xl:pl-[30px] flex-[33.33%] flex items-center min-h-[408px] max-w-[474px] transition-opacity duration-[.5s]"
-					style="opacity: 0.3"
+					class="classLeft xl:pl-[30px] flex-[33.33%] flex items-center min-h-[408px] max-w-[474px] transition-opacity duration-[.5s]"
 				>
 					<div
 						class="font-[700] text-[24px] leading-[32px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 capitalize"
@@ -180,8 +213,7 @@
 				</div>
 				<div
 					id="courseText1"
-					class="xl:pl-[30px] flex-[33.33%] flex items-center min-h-[408px] max-w-[474px] transition-opacity duration-[.5s]"
-					style="opacity: 1"
+					class="classLeft xl:pl-[30px] flex-[33.33%] flex items-center min-h-[408px] max-w-[474px] transition-opacity duration-[.5s]"
 				>
 					<div
 						class="font-[700] text-[24px] leading-[32px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 capitalize"
@@ -195,8 +227,7 @@
 				</div>
 				<div
 					id="courseText2"
-					class="xl:pl-[30px] flex-[33.33%] flex items-center min-h-[408px] max-w-[474px] transition-opacity duration-[.5s]"
-					style="opacity: 0.3"
+					class="classLeft xl:pl-[30px] flex-[33.33%] flex items-center min-h-[408px] max-w-[474px] transition-opacity duration-[.5s]"
 				>
 					<div
 						class="font-[700] text-[24px] leading-[32px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 capitalize"
@@ -210,8 +241,7 @@
 				</div>
 				<div
 					id="courseText3"
-					class="xl:pl-[30px] flex-[33.33%] flex items-center min-h-[408px] max-w-[474px] transition-opacity duration-[.5s]"
-					style="opacity: 0.3"
+					class="classLeft xl:pl-[30px] flex-[33.33%] flex items-center min-h-[408px] max-w-[474px] transition-opacity duration-[.5s]"
 				>
 					<div
 						class="font-[700] text-[24px] leading-[32px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 capitalize"
@@ -225,8 +255,7 @@
 				</div>
 				<div
 					id="courseText4"
-					class="xl:pl-[30px] flex-[33.33%] flex items-center min-h-[408px] max-w-[474px] transition-opacity duration-[.5s]"
-					style="opacity: 0.3"
+					class="classLeft xl:pl-[30px] flex-[33.33%] flex items-center min-h-[408px] max-w-[474px] transition-opacity duration-[.5s]"
 				>
 					<div
 						class="font-[700] text-[24px] leading-[32px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 capitalize"
@@ -255,32 +284,27 @@
 					<img
 						src="https://masaischool.com/images/new-homepage/curriculum-style/course-image1.webp"
 						alt="course"
-						class="rounded-[24px] absolute top-0 !transition-opacity !duration-[.5s] !opacity-0"
-						style=""
+						class="classRight rounded-[24px] absolute top-0 !transition-opacity !duration-[.5s]"
 					/>
 					<img
 						src="https://masaischool.com/images/new-homepage/curriculum-style/course-image2.webp"
 						alt="course"
-						class="rounded-[24px] absolute top-0 !transition-opacity !duration-[.5s] !opacity-[1]"
-						style=""
+						class="classRight rounded-[24px] absolute top-0 !transition-opacity !duration-[.5s]"
 					/>
 					<img
 						src="https://masaischool.com/images/new-homepage/curriculum-style/course-image3.webp"
 						alt="course"
-						class="rounded-[24px] absolute top-0 !transition-opacity !duration-[.5s] !opacity-0"
-						style=""
+						class="classRight rounded-[24px] absolute top-0 !transition-opacity !duration-[.5s]"
 					/>
 					<img
 						src="https://masaischool.com/images/new-homepage/curriculum-style/course-image4.webp"
 						alt="course"
-						class="rounded-[24px] absolute top-0 !transition-opacity !duration-[.5s] !opacity-0"
-						style=""
+						class="classRight rounded-[24px] absolute top-0 !transition-opacity !duration-[.5s]"
 					/>
 					<img
 						src="https://masaischool.com/images/new-homepage/curriculum-style/course-image5.webp"
 						alt="course"
-						class="rounded-[24px] absolute top-0 !transition-opacity !duration-[.5s] !opacity-0"
-						style=""
+						class="classRight rounded-[24px] absolute top-0 !transition-opacity !duration-[.5s]"
 					/>
 				</div>
 			</div>
