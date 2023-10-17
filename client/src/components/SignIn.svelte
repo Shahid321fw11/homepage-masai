@@ -4,23 +4,7 @@
 		togglesignIn();
 	}
 
-	let inputData = '';
-	let inputType = ''; // This variable will store whether it's a mobile or an email
-
-	function handleInputChange() {
-		const value = inputData.trim();
-
-		// Check if the input matches the pattern of an email
-		if (/^\S+@\S+\.\S+$/.test(value)) {
-			inputType = 'email';
-		}
-		// Check if the input matches the pattern of a phone number
-		else if (/^\d{10}$/.test(value)) {
-			inputType = 'mobile';
-		} else {
-			inputType = 'unknown';
-		}
-	}
+	let inputData = { email: '', password: '' };
 </script>
 
 <main class="flex justify-center items-center h-full">
@@ -43,8 +27,16 @@
 				class="border border-1 border-[#f0f4f7] rounded-lg h-12 w-full px-2"
 				type="text"
 				placeholder="Enter phone number or email address"
-				bind:value={inputData}
-				on:input={handleInputChange}
+				bind:value={inputData.email}
+			/>
+		</div>
+		<div class="flex flex-col">
+			<p class="mb-1">Enter your password <span class="text-[#ff3561]">*</span></p>
+			<input
+				class="border border-1 border-[#f0f4f7] rounded-lg h-12 w-full px-2"
+				type="password"
+				placeholder="Enter your password"
+				bind:value={inputData.password}
 			/>
 		</div>
 		<button class="w-full rounded-md bg-[#3470e3] text-[#ffffff] border border-1 h-12"

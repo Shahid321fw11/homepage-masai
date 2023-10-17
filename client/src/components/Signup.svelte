@@ -2,19 +2,46 @@
 	export let togglesignIn;
 
 	let data = {
-		name: '',
+		full_name: '',
 		email: '',
-		mobile: '',
-		code: '',
+		phone_number: '',
+		referral_code: '',
 		password: ''
 	};
-	function handleSubmit() {
-		console.log('Submitting data:', data);
-	}
-	function handleKeyDown(event) {
-		handleSubmit();
-	}
 
+	function handleKeyDown(event) {
+		if (event.keyCode == 'Enter') {
+			return handleSubmit();
+		}
+	}
+	async function handleSubmit() {
+		// Create a JSON object containing the data
+
+		const requestData = JSON.stringify(data);
+
+		// Specify the URL to send the POST request to
+		const url = 'https://raj74434.pythonanywhere.com/signUp';
+
+		try {
+			const response = await fetch(url, {
+				method: 'POST',
+				body: requestData,
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			});
+
+			if (response.ok) {
+				console.log('Request was successful');
+				console.log(response);
+				// You can redirect or handle the response as needed here
+			} else {
+				console.error('Failed', 'Request failed');
+			}
+		} catch (error) {
+			console.error('Error:', error);
+		}
+	}
 	$: {
 		console.log(data);
 	}
@@ -41,7 +68,7 @@
 				class="border border-1 border-[#f0f4f7] rounded-lg h-12 w-full px-2"
 				type="text"
 				placeholder="Enter your Full name"
-				bind:value={data.name}
+				bind:value={data.full_name}
 			/>
 		</div>
 		<div>
@@ -57,9 +84,9 @@
 			<p>Phone Number <span class="text-[#ff3561]">*</span></p>
 			<input
 				class="border border-1 border-[#f0f4f7] rounded-lg h-12 w-full px-2"
-				type="number"
+				type="text"
 				placeholder="Enter phone number"
-				bind:value={data.mobile}
+				bind:value={data.phone_number}
 			/>
 		</div>
 		<div>
@@ -68,7 +95,7 @@
 				class="border border-1 border-[#f0f4f7] rounded-lg h-12 w-full px-2"
 				type="text"
 				placeholder="Enter referral code"
-				bind:value={data.code}
+				bind:value={data.referral_code}
 			/>
 		</div>
 		<div>
