@@ -10442,7 +10442,7 @@ input[type=range].range-lg::-moz-range-thumb {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 400;
-    src: url(../../../fonts/open-sans-v34-latin-regular.woff2) format("woff2"), url(../../../fonts/open-sans-v34-latin-regular.woff) format("woff")
+    src: url(../src/fonts/open-sans-v34-latin-regular.woff2) format("woff2"), url(../src/fonts/open-sans-v34-latin-regular.woff) format("woff")
 }
 
 @font-face {
@@ -10450,7 +10450,7 @@ input[type=range].range-lg::-moz-range-thumb {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
-    src: url(../../../fonts/open-sans-v34-latin-600.woff2) format("woff2"), url(../../../fonts/open-sans-v34-latin-600.woff) format("woff")
+    src: url(../src/fonts/open-sans-v34-latin-600.woff2) format("woff2"), url(../src/fonts/open-sans-v34-latin-600.woff) format("woff")
 }
 
 @font-face {
@@ -10458,7 +10458,7 @@ input[type=range].range-lg::-moz-range-thumb {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 700;
-    src: url(../../../fonts/open-sans-v34-latin-700.woff2) format("woff2"), url(../../../fonts/open-sans-v34-latin-700.woff) format("woff")
+    src: url(../src/fonts/open-sans-v34-latin-700.woff2) format("woff2"), url(../src/fonts/open-sans-v34-latin-700.woff) format("woff")
 }
 
 @font-face {
@@ -10466,7 +10466,7 @@ input[type=range].range-lg::-moz-range-thumb {
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
-    src: url(../../../fonts/poppins-v20-latin-regular.woff2) format("woff2"), url(../../../fonts/poppins-v20-latin-regular.woff) format("woff")
+    src: url(../src/fonts/poppins-v20-latin-regular.woff2) format("woff2"), url(../src/fonts/poppins-v20-latin-regular.woff) format("woff")
 }
 
 @font-face {
@@ -10474,7 +10474,7 @@ input[type=range].range-lg::-moz-range-thumb {
     font-family: Poppins;
     font-style: normal;
     font-weight: 700;
-    src: url(../../../fonts/poppins-v20-latin-700.woff2) format("woff2"), url(../../../fonts/poppins-v20-latin-700.woff) format("woff")
+    src: url(../src/fonts/poppins-v20-latin-700.woff2) format("woff2"), url(../src/fonts/poppins-v20-latin-700.woff) format("woff")
 }
 
 @media (min-width: 768px) {
