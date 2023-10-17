@@ -1,6 +1,7 @@
 <script>
 	import '../app.css';
 	import '../non-critical-style.9657d852.css';
+	import '../_layout.896888ea.css';
 	import Navbar from '../components/Navbar.svelte';
 	import Footer from '../components/Footer.svelte';
 	import News from '../components/News.svelte';
@@ -10,20 +11,18 @@
 	import Potential from '../components/Potential.svelte';
 	import Elevate from '../components/Elevate.svelte';
 	import Hiring from '../components/Hiring.svelte';
-	import Community from '../components/Community.svelte';
-	// import NewNavbar from '../components/NewNavbar.svelte';
+	// import Community from '../components/Community.svelte';
 	import Curriculum from '../components/Curriculum.svelte';
 	import Outcomes from '../components/Outcomes.svelte';
+	// import Impact from '../components/Impact.svelte';
+	// import ImpactNew from '../components/ImpactNew.svelte';
 </script>
 
 <slot />
-<section>
+<section class="fixed w-full z-[500]">
 	<Navbar />
 </section>
-
-<!-- <section>
-	<NewNavbar />
-</section> -->
+<section class="h-[144px]" />
 
 <section>
 	<Hero />
@@ -51,6 +50,13 @@
 <section>
 	<Hiring />
 </section>
+
+<!-- <section>
+	<Impact />
+</section> -->
+<!-- <section>
+	<ImpactNew />
+</section> -->
 
 <section>
 	<Elevate />
