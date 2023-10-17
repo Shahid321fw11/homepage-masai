@@ -14,7 +14,12 @@
 	console.log('isOpen', isOpen);
 </script>
 
-<div class="sticky top-[-1px] left-0 z-[200]">
+<div
+	class="toast sticky z-[10000] pointer-events-none top-[24px] left-[0px] right-[0px] mx-auto flex w-full max-w-[504px] flex-col-reverse gap-4 sm:translate-x-0 undefined undefined"
+/>
+<div class="drawerDiv" />
+
+<div class="sticky top-[-1px] left-0 z-[200] bg-white">
 	<div class="bg-[#FEDFE5] text-center py-[8px] relative px-[8px]">
 		<p class="!font-[600] text-[16px] leading-[24px] font-sans">
 			Applications for our 6th November Batches are now open!
@@ -141,7 +146,12 @@
 					class="active:!ring-0 rounded-[8px] text-white !font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[12px_16px] focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 w-fit md:px-[8px] hidden md:flex !bg-[#E5FEFF] hover:!bg-[#CFE9EE] whitespace-nowrap"
 					style="color: rgb(110, 113, 204) !important;">Refer &amp; Earn</a
 				>
-				<a href="/" style="color: rgb(110, 113, 204) !important;">Refer &amp; Earn</a>
+				<a
+					href="/referral"
+					disabled="false"
+					class="active:!ring-0 bg-ms-red-500 hover:bg-ms-red-600 rounded-[8px] text-white !font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[8px_12px] inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 px-[8px] flex md:hidden !bg-[#E5FEFF] hover:!bg-[#CFE9EE] text-[12px] !font-[600] flex whitespace-nowrap"
+					style="color: rgb(110, 113, 204) !important;">Refer &amp; Earn</a
+				>
 				<button
 					type="button"
 					class="bg-transparent border border-red-500 !text-primary-red-500 hover:bg-ms-red-100 focus-visible:bg-white rounded-[8px] !font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[12px_16px] focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 hidden md:block"
@@ -150,7 +160,7 @@
 				<button
 					type="button"
 					class="bg-transparent !text-primary-red-500 hover:bg-ms-red-100 focus-visible:!bg-white rounded-[8px] !font-[600] text-[12px] leading-[16px] font-sans tracking-[1.25px] uppercase p-[8px_12px] focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 block md:hidden"
-					>sign up</button
+					on:click={() => (isOpen = true)}>sign up</button
 				>
 			</div>
 		</div>
@@ -211,6 +221,3 @@
 		</div>
 	</div>
 </div> -->
-
-<style>
-</style>

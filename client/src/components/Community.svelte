@@ -264,16 +264,3 @@
 		</div>
 	</div>
 </div>
-
-<style>
-	.swiper-button-disabled {
-		opacity: 0;
-		pointer-events: none;
-	}
-
-	.swiper-button-disabled.svelte-jnbt72 {
-		cursor: not-allowed !important;
-		opacity: 0.4 !important;
-		box-shadow: none !important;
-	}
-</style>
