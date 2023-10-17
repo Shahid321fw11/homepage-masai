@@ -28,7 +28,7 @@
 	</div>
 
 	<nav
-		class=" dark:bg-gray-900 text-gray-700 dark:text-gray-200 border-gray-100 dark:border-gray-700 w-full bg-[#FFFFFF] relative z-[100] shadow-[0px_4px_6px_rgba(0,_0,_0,_0.11)] md:shadow-[0px_1px_2px_rgba(0,_0,_0,_0.06)]"
+		class="dark:bg-gray-900 text-gray-700 dark:text-gray-200 border-gray-100 dark:border-gray-700 w-full bg-[#FFFFFF] relative z-[100] shadow-[0px_4px_6px_rgba(0,_0,_0,_0.11)] md:shadow-[0px_1px_2px_rgba(0,_0,_0,_0.06)]"
 	>
 		<div
 			class="min-h-[64px] md:min-h-[88px] py-[12px] px-[10px] md:py-[20px] !max-w-[1280px] mx-auto flex items-center justify-between container"
