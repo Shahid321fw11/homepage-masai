@@ -18,6 +18,9 @@ This project encompasses the development of a web application dedicated to user 
 
 ## Screenshot
 
+#### Fully Responsive Design
+Our web application offers seamless responsiveness on both desktop and mobile devices, ensuring a user-friendly experience across various platforms.
+
 ![image](https://raw.githubusercontent.com/Shahid321fw11/homepage-masai/main/assets/Screenshot%20(19).png)
 
 ![image](https://raw.githubusercontent.com/Shahid321fw11/homepage-masai/main/assets/Screenshot%20(20).png)
