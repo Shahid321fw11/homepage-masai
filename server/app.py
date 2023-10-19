@@ -1,10 +1,9 @@
-
+from flask_cors import CORS
 import flask_bcrypt
 from flask import Flask, request, jsonify, session
 from flask_sqlalchemy import SQLAlchemy
 import re
 import secrets
-from flask_cors import CORS
 
 app = Flask(__name__)
 app.secret_key = 'masai'
@@ -13,8 +12,9 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 CORS(app)
 
+
 class Users(db.Model):
-    __tablename__="user1"
+    __tablename__="user2"
     id = db.Column(db.Integer, primary_key=True)
     full_name = db.Column(db.String(120))
     email = db.Column(db.String(120), unique=True)
@@ -40,7 +40,7 @@ def init_db():
 
 @app.route('/', methods=['GET'])
 def home():
-    return "hello"
+    return "hello welcome to masai homepage"
 
 
 @app.route('/signUp', methods=['POST'])
@@ -75,9 +75,6 @@ def signUp():
 
         return jsonify({
             "message": "Registration successful",
-            # "email":new_user.email,
-            # "phone":new_user.phone_number,
-            # "id":new_user.id
             }), 201
 
 
