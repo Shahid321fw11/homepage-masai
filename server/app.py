@@ -37,7 +37,6 @@ def init_db():
         db.create_all()
 
 
-
 @app.route('/', methods=['GET'])
 def home():
     return "hello welcome to masai homepage"
@@ -114,13 +113,6 @@ def signOut():
         return jsonify({"error": "Invalid token"}), 401
 
 
-def validate_email_format(email):
-    email_pattern = r'^[\w\.-]+@[\w\.-]+\.\w+'
-    if re.match(email_pattern, email):
-        return True
-    else:
-        return False
-
 
 def validate_phone_number_format(phone_number):
     cleaned_number = re.sub(r'\D', '', phone_number)
@@ -128,6 +120,14 @@ def validate_phone_number_format(phone_number):
         return True
     else:
         return False
+    
+def validate_email_format(email):
+    email_pattern = r'^[\w\.-]+@[\w\.-]+\.\w+'
+    if re.match(email_pattern, email):
+        return True
+    else:
+        return False
+
 
 
 if __name__ == '__main__':
