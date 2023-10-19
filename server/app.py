@@ -1,7 +1,7 @@
 from flask_cors import CORS
 import flask_bcrypt
-from flask import Flask, request, jsonify, session
 from flask_sqlalchemy import SQLAlchemy
+from flask import Flask, request, jsonify, session
 import re
 import secrets
 
