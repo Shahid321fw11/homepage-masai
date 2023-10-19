@@ -7,7 +7,7 @@ You can explore the web application by following the links below:
 - [GitHub Repo](https://masai-homepage-n7vwvmbxb-furqan5921.vercel.app/)
 
 ## Team Members
-- [Raj](https://github.com/raj74434) :- Backend
+- [Raj](https://github.com/raj74434) :- Backend/Server/Test cases
 - [Yatin](https://github.com/yatinkumar01) :- Backend
 - [Furkan](https://github.com/furqan5921) :- Frontend
 - [Shahid](https://github.com/Shahid321fw11) :- Frontend
