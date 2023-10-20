@@ -9,7 +9,7 @@ You can explore the web application by following the links below:
 ## Team Members
 - [Raj](https://github.com/raj74434) :- Backend/Server/Test cases
 - [Yatin](https://github.com/yatinkumar01) :- Backend
-- [Furkan](https://github.com/furqan5921) :- Frontend
+- [Furqan](https://github.com/furqan5921) :- Frontend
 - [Shahid](https://github.com/Shahid321fw11) :- Frontend
 
 ## Project Overview
